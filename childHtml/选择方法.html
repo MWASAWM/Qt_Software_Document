@@ -1,0 +1,55 @@
+<h2>功能</h2>
+
+
+<div class="panel panel-info">
+    <div class="panel-heading">新建方法</div>
+    <div class="panel-body"></div>
+    
+    <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" aria-expanded="true" href="#xjff_code">
+                详细代码
+            </a>
+        </h4>
+    </div>
+    <div id="xjff_code"class="panel-collapse collapse">
+        <div class="panel-body">
+            void NormalUI_ChoseMenthod::on_pushButton_clicked()<br>
+            {<br>
+            
+                delete EditMenthod;<br>
+            
+                EditMenthod=new ChoseMenthod_EditMenthod();<br>
+            
+                connect(EditMenthod,&ChoseMenthod_EditMenthod::RenewSignal,this,&NormalUI_ChoseMenthod::RenewTable);<br>
+            
+                EditMenthod->changeTitle();<br>
+            
+                EditMenthod->show();<br>
+            
+            
+            }<br>
+        </div>
+    </div>
+</div>
+<br>    
+<br>
+<br>
+
+
+    <div class="panel panel-info">
+        <div class="panel-heading">编辑方法</div>
+        <div class="panel-body"></div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">删除方法</div>
+        <div class="panel-body"></div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">确定</div>
+        <div class="panel-body"></div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">返回</div>
+        <div class="panel-body"></div>
+    </div>
