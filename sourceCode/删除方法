@@ -1,0 +1,17 @@
+<xmp>
+    void NormalUI_ChoseMenthod::on_pushButton_3_clicked()
+    {
+        if(ui->tableWidget->currentItem()->isSelected())
+        {
+            QString location="d:/menthod/"+ui->tableWidget->currentItem()->text()+".mth";
+
+            ui->tableWidget->removeRow(ui->tableWidget->currentItem()->row());
+
+            QFile removefile(location);
+            
+            removefile.remove();
+        }
+    }
+
+
+</xmp>
