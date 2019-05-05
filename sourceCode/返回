@@ -1,6 +1,0 @@
-<xmp>
-void NormalUI_ChoseMenthod::on_pushButton_5_clicked()
-{
-    this->hide();
-}
-</xmp>
